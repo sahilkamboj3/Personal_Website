@@ -1,0 +1,475 @@
+body, html {
+  width: 100%;
+  margin:auto;
+  padding:0;
+  scroll-behavior: smooth;
+  transition: 0.25s ease-in-out;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Poppins", "Oswald", sans-serif;
+}
+
+/*General*/
+
+.me-read-more {
+  border: lightblue 2px solid;
+  background: transparent;
+  color: black;
+  font-size: 1.15rem;
+  width: 200px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 0.15s ease-in; 
+}
+
+.me-read-more:hover {
+  background-color: rgb(255, 242, 172);
+  border: lightblue 2px solid;
+  cursor: pointer;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: none;
+  position: relative;
+  font-family: "Oswald";
+}
+
+h1::before {
+  content: "";
+  display: block;
+  height: 1.75px;
+  width: 100px;
+  background-color: black;
+  position: relative;
+  top: 15px;
+  margin: auto;
+  margin-bottom: 3vh;
+  letter-spacing: normal;
+}
+
+
+h1::after {
+  content: "";
+  display: block;
+  height: 1.75px;
+  width: 100px;
+  background-color: black;
+  position: relative;
+  top: 15px;
+  margin: auto;
+  margin-bottom: 2vh;
+  letter-spacing: normal;
+}
+
+h2 {
+  color: #37c;
+  line-height: 0.9em;
+  justify-self: left;
+  padding:none;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: #5e9516;
+  font-weight: 800;
+  justify-self: left;
+  margin: 0;
+  line-height: 0.9em;
+  font-size: 1.15rem;
+  margin-top: 5px;
+}
+
+p {
+  font-weight: lighter;
+}
+
+img {
+  border-radius: 60px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+div {
+  text-align: left;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+div:hover {
+  opacity: 1;
+}
+
+hr {
+  height: 0.25px;
+  background-color: red;
+  box-shadow: 2px 2px 3px lightblue;
+  width: 97.5%;
+  margin-bottom: 5vh;
+}
+
+i {
+  font-size: 2.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black !important;
+}
+
+i:hover {
+  color: salmon;
+  cursor: pointer;
+}
+
+.fa-long-arrow-alt-up {
+  font-size: 1em;
+}
+
+.fa-long-arrow-alt-up:hover {
+  color: black;
+  cursor: default;
+}
+
+.location {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-size: 1.15rem;
+  color: #696969;
+}
+
+.now, .future, .family {
+  margin: 0;
+  padding-top: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.white-image{
+  box-shadow: 1px 1px 2px darkgray;
+}
+
+/*Specific*/
+
+.academics, .taekwondo-ffma, .taekwondo-excel, .business, .junoon, .compsci, .family {
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+}
+
+.location {
+  justify-self: left;
+}
+
+.now {
+  background-color: white;
+  box-shadow: 1px 1px 2px 3px lightgray;
+  width: 100%;
+}
+
+.now-text {
+  width: 87.5%;
+  margin: auto;
+}
+
+/*Me*/
+
+.me {
+  background-image: url(../images/sahil.jpg);
+  position: left;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  transition: 0.5s ease-in;
+}
+
+
+.me-text {
+  margin: auto;
+  text-align: center;
+}
+
+.hey {
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.my-name {
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*NavBar*/
+
+.box-scroller {
+  background-color: darkblue;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  box-shadow: 2px 2px 1px lightblue;
+  flex-direction: row;
+}
+
+.scroller-text {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-scroller p {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-scroller p:hover {
+  color: salmon;
+  cursor: pointer;	
+}
+
+/*What I Have Done*/
+
+.title h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: "Oswald";
+}
+
+/*FFMA*/
+
+[alt="Fitness Factory Martial Arts"] {
+  height:250px;
+  width: auto;
+  justify-self: center;
+}
+
+[alt="UCSD MicroMasters Course"] {
+  border-radius: 0;
+  margin-bottom: 2vh;
+}
+
+/*Future*/
+
+.future {
+  background-color: #F5F5F5	;
+  box-shadow: 1px 1px 2px 3px lightgray;
+  width: 100%;
+}
+
+.future-desires {
+  width: 87.5%;
+  margin: auto;
+}
+
+.google {
+  margin-top: 5vh;
+}
+
+.future-desires h1 {
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.future img {
+  box-shadow: 1px 1px 2px darkgray;
+}
+
+/*Family*/
+
+.family {
+  background-color: white;
+  box-shadow: 1px 1px 2px 3px lightgray;
+  padding-bottom: 3vh;
+  width: 100%;
+}
+
+.family-text {
+  width: 87.5%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.family-me {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+[alt="Sarthak Kamboj"]{
+  height: 650px;
+  width: 275px;
+  margin: auto;
+  margin-bottom: 3vh;
+}
+
+/*Motto*/
+
+.mottos {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  background-image: url(../images/motto_bck.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mottos ul, .mottos h2 {
+  margin: auto;
+}
+
+.mottos h2 {
+  margin-bottom: 6vh;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.mottos h2::after {
+  content: "___________";
+  display: block;
+  height: 2px;
+  width: 100%;
+  color: white;
+  margin: auto;
+}
+
+.mottos ul {
+  font-size: 1.25rem;
+}
+
+.mottos ul li {
+  padding-top: 15px;
+  list-style: none;
+  color: white;
+}
+
+.mottos ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+
+/*Social Media*/
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3vh;
+  margin-bottom: 0;
+  padding-bottom: 0vh !important;
+}
+
+@media only screen and (min-width: 500px){
+
+  /*Nav Bar*/
+
+  .box-scroller {
+    background-color: darkblue;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 1px lightblue;
+    flex-direction: row;
+  }
+
+  .scroller-text {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box-scroller p {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 10vh;
+  }
+
+  .box-scroller p:hover {
+    color: salmon;
+    cursor: pointer;	
+  }
+  
+  .me {
+    background-image: url(../images/computer-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 100vh;
+  }
+
+  .hey {
+    color: black;
+  }
+
+  
+  img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+  .now, .future, .family {
+    margin: auto;
+    transition: 0.5s ease-in;
+  }
+ 
+  .now-text {
+    width: 50%;
+    margin: auto;
+  }
+ 
+  .future-desires {
+    width: 50%;
+    margin: auto;
+  }
+ 
+  .family-text {
+    width: 50%;
+    margin: auto;
+  }
+
+  .taekwondo-ffma {
+    display: flex;
+  }
+
+  .social-media {
+     position: fixed;
+     margin-left: 6vh;
+  }
+
+ 
+  
+ }
+ 
+ 

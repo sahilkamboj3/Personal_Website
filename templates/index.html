@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sahil Kamboj</title>
+    <!--<link rel="stylesheet" href="static/css/style.css" type="text/css">-->
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='fontawesome-free-5.9.0-web/fontawesome-free-5.9.0-web/css/all.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85494e2658.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!--<script src="../static/js/home.js" type="text/javascript"></script>-->
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="me">
+        <div class="me-text">
+          <p class="hey">Hey, I'm</p>
+          <h1 class="my-name">Sahil <br> Kamboj</h1>
+        </div>
+      </div>
+      <section class="box-scroller">
+        <div class="scroller-text">
+          <p id="now" onclick="jump('now')">Now</p>
+          <p id="future" onclick="jump('future')">Future</p>
+          <p id="family" onclick="jump('family')">Family</p>
+      </div>
+      </section>
+      <div class="now">
+        <div class="now-text">
+          <div class="title">
+            <h1 class="title-heading">Here's what I've done so far</h1>
+          </div>
+          <div class="academics">
+            <img class="white-image" src="{{url_for('static',filename='images/academics.jpg')}}" alt="University High School">
+            <h2>University High School</h2>
+            <h4>Student</h4>
+            <p class="location">Irvine, CA</p>
+            <p>
+              One of the top schools in the state of California, in fact a top 500 school in the state. Attending this school changed my whole high school experience. From the caring teachers to the enthusiastic enviroment the students and the staff create, coming to this school everyday taught me valuable lessons and useful opportunities to improve myself as a student, friend, and person. 
+            </p>
+          </div>
+          <hr>
+          <div class="compsci">
+              <img class="white-image" src="{{url_for('static',filename='images/igeekteam.png')}}" alt="iGeekTeam">
+              <h2>Web Developer & App Developer Intern</h2>
+              <p class="location">Tustin, CA</p>
+              <p>I was fortunate enough to become an intern at iGeekTeam and it was to say the least a new experience. Sure I worked on websites through the WordPress platform and created products I am proud to be a part of, most importantly, it gave me a chance to join a professional computer science environment. The time I spent here laid a foundation for my software-engineering career and pushed me to expand my knowledge and skill.</p>
+          </div>
+          <hr>
+          <div class="machine-learning">
+            <img src="{{url_for('static',filename='images/mlucsd.png')}}" alt="UCSD MicroMasters Course">
+            <h2>UCSD MicroMasters Course</h2>
+            <p>In addition to web development, I decided to pursue machine learning and the UCSD MicroMasters Course gave me the intro as a stepping stone. This course jumpstarted my passion for ML and motivated me to complete multiple projects from NBA Stat Predicting to Stock Predicting and more! In the future, I hope to land an ML or AI job in Google, certainly a job I would be very excited to go to everyday.</p>
+          </div>
+          <hr>
+          <div class="taekwondo-ffma">
+            <img src="{{url_for('static',filename='images/ffma.jpg')}}" alt="Fitness Factory Martial Arts">
+            <h2>Fitness Factory Martial Arts</h2>
+            <h4>Volunteer Instructor</h4>
+            <p class="location">Irvine, CA</p>
+            <p>FFMA, a taekwondo dojo teaching students the art of Taekwondo, helped students not only earn their black belts but understand the meaning of the hardwork and dedication that goes behind it. Teaching other students gifted me the experiences of working with younger and older students alike. Playing the role of a mentor and teacher inspired me to be the best version of myself yet the longer I stayed, the more I came out of my own shell.</p>
+          </div>
+          <hr>
+          <div class="taekwondo-excel">
+            <img class="white-image" src="{{url_for('static',filename='images/excel-logo-final.jpg')}}" alt="Excel Taekwondo Center">
+            <h2>Excel Taekwondo</h2>
+            <h4>National Team Member</h4>
+            <p class="location">Los Angeles, CA</p>
+            <p>As a part of the National Team at Excel Taekwondo, I achieved my goal of being a Taekwondo State Champion in the Nevada State Championships and a runner-up in the California State Championships. That experience taught me the value of grit and patience, two humbling qualities that pushed me through tough challenges I was faced with. I also enjoyed the family and relationships I formed with others, a testament to the bonds I can form with those around me.
+            </p>
+          </div>
+          <hr>
+          <div class="business">
+            <img class="white-image" src="{{url_for('static',filename='images/business.jpg')}}" alt="Virtual Enterprise">
+            <h2>Virtual Enterprise</h2>
+            <h4>CIO of High Tide</h4>
+            <p class="location">Irvine, CA</p>
+            <p>Joining this ROP Business Class my school had to offer completely changed my view of the business world. Going into the class, I had a surface-level understanding of the financials and details behind creating a business but coming out of it, I learned the in-and-outs of running one: learning about the economy, designing, financials, staffing, and more. Through the process, not only did I earn several awards at VE tradeshows, my passion motivated me to pursue it outside of school setting. 
+              <br>
+            Scroll down to check it out!
+            </p>
+          </div>
+          <hr>
+          <div class="youth-ceo-academy">
+            <img class="white-image" src="{{url_for('static',filename='images/youthceo.jpeg')}}" alt="Youth CEO Academy">
+            <h2>Youth CEO Academy</h2>
+            <h4>Student</h4>
+            <p class="location">Irvine, CA</p>
+            <p>Youth CEO Academy was a family-run business class to teach young students about modern-day business and expose them to different business competitions. Joining this my first year was certainly a different experience and one that I got much value out of. Not only did I begin writing business plans and putting my knowledge from VE to use, I was also able to connect with many business partners and friends alike. Through our virtual company, Toyz4Joy, we found a lot of success at the UCI and UCLA business compeitions, receiving 1<sup>st</sup> place and Participations Awards, respectively.</p>
+          </div>
+          <hr>
+          <div class="junoon">
+            <img class="white-image" src="{{url_for('static',filename='images/junoon.png')}}" alt="Shopify Logo">
+            <h2>Junoon Club</h2>
+            <h4>Founder & Owner</h4>
+            <p class="location">Irvine, CA</p>
+            <p>Junoon Club is aimed at providing top-quality leather products to consumers at compeitive prices. As I started family-run e-commerce business from scratch, I opened myself to a new type of business, the online business and it something drastically different. Over time, I taught myself advertising tricks, website design through Shopify, and consumer accessibility and finding success was a breakthrough in many ways for me. </p>
+          </div>
+          <hr>
+          <div class="mathnasium">
+            <img class="white-image" src="{{url_for('static',filename='images/mathnasium.jpg')}}" alt="Mathnasium">
+            <h2>Mathnasium</h2>
+            <h4>Math Tutor</h4>
+            <p class="location">Laguna Niguel, CA</p>
+            <p>Mathnasium is a franchised-tutoring company aimed at teaching young kids to love and grow their abilites in different math concepts. Working a job at Mathnasium taught me a great deal about the workplace and held me accountable to not only be punctual to me work shifts but also carry myself in a professional manner and communicate properly with others. Teaching other students gave me confidence in my leadership and vocal skills and a satisfaction for helping others learn and grow.</p>
+          </div>
+        </div>
+      </div>
+      <div class="future">
+        <div class="future-desires">
+          <h1 class="future-title">What I want to do</h1>
+          <div class="google">
+            <img src="{{url_for('static',filename='images/google.png')}}" alt="Google">
+            <h2>Google</h2>
+            <h4>Machine Learning Scientist</h4>
+            <p>Since falling in love in with computer science, I knew right away it was going to be the passion I want to pursue. My goal is to become a professional coder in many fields from app development to web development to machine learning and artifical intelligence. However, my dream job would be to land a computer science position at Google, my dream company I have longed to work at since I was young.</p>
+          </div>
+          <hr>
+          <div class="future-business">
+            <img src="{{url_for('static',filename='images/future-business.jpg')}}" alt="Business">
+            <h2>Business & E-Commerce</h2>
+            <h4>CEO & Ventured Capitalist</h4>
+            <p>Taking Virtual Enterprise and being exposed to e-commerce opened up a new world for me: business and e-commerce. Eventaully, my goal is to own multiple kinds of businesses from e-commerce(Shopify) platforms to opening a tangible computer science business. These would allow me to combine my two passions of computer science and business, certainly a job I would be eager to go to everyday. Yet, it is not just computer science or Shopify that I would like to take on, Amazon FBA is another field in which I would like to link and expand my shopify stores to sell my products to the users on that website.</p>
+          </div>
+        </div>
+      </div>
+      <div class="family">
+        <div class="family-text-full">
+          <h1>Family</h1>
+          <div class="family-text">
+            <div class="mom">
+              <img src="{{url_for('static',filename='images/mom.jpg')}}" alt="Reena Kamboj">
+              <h2>Mom</h2>
+              <p>One time, my mom told me "Don't do anything for me, do it for you; follow your own passions." My mom always made sure to give me the freedom to pursue what I desired while giving her full support. Without a doubt, her support fueled me through many tough times and puts me a position to be in a happy place in my life.</p>
+            </div>
+            <hr>
+            <div class="dad">
+              <img src="{{url_for('static',filename='images/dad.jpg')}}" alt="Sachin Kamboj">
+              <h2>Dad</h2>
+              <p>Growing up in an academic-environment, my dad understood the pressures I often dealt with to keep up with my peers. At times, I would feel awful for falling slightly behind as I would compare myself with others. My dad always knew how to relieve that pressure and his guidance certainly eased a lot of the pressures of the high school experience. My dad's simplicity and caring personality are qualities I strive to put in myself.</p>
+            </div>
+            <hr>
+            <div class="brother">
+              <img src=".{{url_for('static',filename='images/sarthak-second.jpg')}}" alt="Sarthak Kamboj">
+              <h2>Brother</h2>
+              <p>My brother and I have always been competitive in whatever we do: sports, academics, and more. Because of him, I gained a competitive edge to beat others, to win, to work harder than those around me. Sure, I wouldn't win everytime but my life's experiences taught me to always find another way. <br>As my brother always used to say, "It's not about what you win, it's about how you win."</p>
+            </div>
+            <hr>
+            <div class="family-me">
+              <img src="{{url_for('static',filename='images/sahil.jpg')}}" alt="Sahil Kamboj">
+              <h2>Me</h2>
+              <p>And I'm Sahil Kamboj, the fourth family member of this group. Much like my brother, I am a high schooler attending University High School trying to pursue my passions of computer science and business. This whole website aims to define who I am and the different aspects of my life that I feel make me different. Make sure to scroll through!</p>
+              <button class="me-read-more" onclick="jump('me')">Scroll To the Top</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mottos">
+        <h2 class="motto-title">
+          My Mottos
+        </h2>
+        <ul>
+          <li>Change Every Day.</li>
+          <li>Live More, Stress Less.</li>
+          <li>Pursue Passions, Not Money.</li>
+          <li>Strength Comes from Inside.</li>
+          <li>Socialize Through Words.</li>
+          <li>Follow your Heart.</li>
+          <li>Live, Love, Laugh.</li>
+          <li>Whatever It Takes.</li>
+          <li>Understand Who You Are,<br>Choose Who You Want to Be.</li>
+        </ul>
+      </div>
+    
+      <div class="social-media">
+        <a href="https://www.instagram.com/sahil_3330/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/add/sahiltheballer/" target="_blank"><i class="fab fa-snapchat"></i></a>
+        <a href="https://www.facebook.com/sahil.kamboj.54966834" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/sahilkamboj3" target="_blank"><i class="fab fa-github"></i></a>
+        <!--<p>&copy; 2019 Sahil Kamboj. All Rights Reserved.</p>-->
+      </div>
+    </div>
+  </body>
+</html>
